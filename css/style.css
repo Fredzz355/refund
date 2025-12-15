@@ -286,120 +286,62 @@ footer {
     }
 }
 
+/* === AMÉLIORATION RESPONSIVE MOBILE === */
 
-/* ========================= */
-/*   RESPONSIVE MOBILE PRO   */
-/* ========================= */
-
-/* Écrans moyens (tablettes) */
-@media (max-width: 900px) {
+@media (max-width: 700px) {
 
     body {
-        font-size: 15px;
+        font-size: 18px;
     }
 
     header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .logo {
-        margin-right: 0;
-        margin-bottom: 10px;
+        padding: 25px 20px;
     }
 
     .header-text h1 {
-        font-size: 28px;
-    }
-
-    /* Grilles en 2 colonnes */
-    .etapes-container,
-    .choisir-container {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
-
-    .explications,
-    .etapes,
-    .choisir,
-    .contact {
-        margin: 20px;
-        padding: 25px;
-    }
-}
-
-/* Écrans petits (smartphones) */
-@media (max-width: 600px) {
-
-    body {
-        font-size: 14px;
-    }
-
-    /* Header */
-    header {
-        padding: 15px 10px;
-    }
-
-    .header-text h1 {
-        font-size: 22px;
+        font-size: 32px;
     }
 
     .slogan {
-        font-size: 12px;
+        font-size: 16px;
     }
 
-    /* Image principale */
+    /* Image plus grande sur mobile */
     .hero img {
-        height: 240px;
+        height: 450px; 
         object-fit: cover;
-        object-position: center;
     }
 
-    /* Sections */
+    /* Blocs plus larges + marges augmentées */
     .explications,
     .etapes,
     .choisir,
     .contact {
-        margin: 15px;
-        padding: 20px;
+        margin: 25px 15px;
+        padding: 30px 20px;
     }
 
-    /* Grilles en 1 colonne */
-    .etapes-container,
-    .choisir-container {
-        grid-template-columns: 1fr;
+    .explications h2 {
+        font-size: 28px;
     }
 
-    /* Textes */
-    .explications h2,
-    .etapes h2,
-    .choisir h2,
-    .contact h2 {
-        font-size: 22px;
+    .explications p,
+    .explications ul {
+        font-size: 18px;
     }
 
-    .explications h3,
-    .etape h3,
-    .choisir-item h3 {
-        font-size: 17px;
-    }
-
+    /* Boutons plus grands */
     .btn-primary {
-        font-size: 16px;
-        padding: 12px 20px;
+        font-size: 20px;
+        padding: 16px 30px;
     }
 
-    /* Footer */
-    footer {
-        padding: 35px 15px;
-    }
-
-    .footer-title {
-        font-size: 22px;
-    }
-
-    .footer-desc {
-        font-size: 14px;
+    /* Cartes plus grandes */
+    .etape,
+    .choisir-item,
+    .contact-box {
+        padding: 30px 20px;
+        font-size: 18px;
     }
 }
 
