@@ -253,15 +253,27 @@ footer {
     margin-top: 20px;
     font-size: 14px;
 }
-/* === AGRANDIR LE SITE SUR MOBILE === */
+/* ========================== */
+/* RESPONSIVE STYLE (DUNDLE STYLE) */
+/* ========================== */
+
 @media (max-width: 600px) {
 
     body {
-        font-size: 20px;
+        font-size: 18px; /* textes plus grands */
+        padding: 0;
+        margin: 0;
     }
 
     header {
-        padding: 30px 20px;
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .logo {
+        height: 70px;
+        margin: 0 0 10px 0;
     }
 
     .header-text h1 {
@@ -269,49 +281,63 @@ footer {
     }
 
     .slogan {
-        font-size: 18px;
+        font-size: 16px;
     }
 
+    /* Hero */
     .hero img {
-        height: 320px;
+        height: 230px;
+        object-position: center;
     }
 
-    .explications {
-        margin: 20px;
-        padding: 30px;
-        font-size: 18px;
+    /* Sections – mêmes proportions que Dundle */
+    .explications,
+    .etapes,
+    .choisir,
+    .contact {
+        margin: 20px 15px;
+        padding: 25px;
+        border-radius: 10px;
     }
 
-    .explications h2 {
-        font-size: 26px;
+    .explications h2,
+    .etapes h2,
+    .choisir h2,
+    .contact h2 {
+        font-size: 24px;
     }
 
-    .explications h3 {
-        font-size: 22px;
-    }
-
-    .btn-primary {
-        font-size: 20px;
-        padding: 18px 30px;
-    }
-
+    /* Les cartes deviennent plus larges */
     .etapes-container,
     .choisir-container {
-        grid-template-columns: 1fr;
-        gap: 30px;
+        grid-template-columns: 1fr !important;
     }
 
     .etape,
     .choisir-item {
-        padding: 30px;
-        font-size: 18px;
+        padding: 20px;
+        font-size: 17px;
     }
 
+    /* Bouton principal */
+    .btn-primary {
+        width: 100%;
+        padding: 18px;
+        font-size: 20px;
+        margin-top: 25px;
+    }
+
+    /* Footer */
     footer {
-        font-size: 18px;
-        padding: 60px 20px;
+        padding: 40px 15px;
+    }
+
+    .footer-title {
+        font-size: 22px;
+    }
+
+    .footer-desc {
+        font-size: 15px;
     }
 }
-
-
 
