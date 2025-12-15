@@ -285,3 +285,121 @@ footer {
         height: 500px;
     }
 }
+
+
+/* ========================= */
+/*   RESPONSIVE MOBILE PRO   */
+/* ========================= */
+
+/* Écrans moyens (tablettes) */
+@media (max-width: 900px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .header-text h1 {
+        font-size: 28px;
+    }
+
+    /* Grilles en 2 colonnes */
+    .etapes-container,
+    .choisir-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .explications,
+    .etapes,
+    .choisir,
+    .contact {
+        margin: 20px;
+        padding: 25px;
+    }
+}
+
+/* Écrans petits (smartphones) */
+@media (max-width: 600px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    /* Header */
+    header {
+        padding: 15px 10px;
+    }
+
+    .header-text h1 {
+        font-size: 22px;
+    }
+
+    .slogan {
+        font-size: 12px;
+    }
+
+    /* Image principale */
+    .hero img {
+        height: 240px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    /* Sections */
+    .explications,
+    .etapes,
+    .choisir,
+    .contact {
+        margin: 15px;
+        padding: 20px;
+    }
+
+    /* Grilles en 1 colonne */
+    .etapes-container,
+    .choisir-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Textes */
+    .explications h2,
+    .etapes h2,
+    .choisir h2,
+    .contact h2 {
+        font-size: 22px;
+    }
+
+    .explications h3,
+    .etape h3,
+    .choisir-item h3 {
+        font-size: 17px;
+    }
+
+    .btn-primary {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 35px 15px;
+    }
+
+    .footer-title {
+        font-size: 22px;
+    }
+
+    .footer-desc {
+        font-size: 14px;
+    }
+}
+
